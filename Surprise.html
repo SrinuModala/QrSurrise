@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Surprise 🎉</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background-color: black;
+      color: #00ffcc;
+      font-family: monospace;
+      text-align: center;
+      padding-top: 25vh;
+    }
+
+    #loading {
+      font-size: 18px;
+    }
+
+    #message {
+      display: none;
+      font-size: 20px;
+      animation: fadeIn 2s forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="loading">
+    Initializing system...<br>
+    Scanning QR data...<br>
+    Decrypting message... 🔐
+  </div>
+
+  <div id="message">
+    <h2>Access Granted ✅</h2>
+    <p>
+      Surprise 😄<br><br>
+      You just unlocked a secret message 🔥<br>
+      Thanks for being awesome!<br><br>
+      Happy ga undu chekka MOUNI 😄🎉
+    </p>
+  </div>
+
+  <script>
+    setTimeout(function () {
+      document.getElementById("loading").style.display = "none";
+      document.getElementById("message").style.display = "block";
+    }, 3000);
+  </script>
+
+</body>
+</html>
